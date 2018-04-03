@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<c:set var="picPath" value="http://www.120.76.127.83:8080/upload/"></c:set>
+<c:set var="picPath" value="http://www.localhost:8080/upload/"></c:set>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -78,57 +78,57 @@
 		</div>
 	</div>
 
-	<div class="disscuss">
-		<h2>评论</h2>
-		<div class="container-user">
-			<div class="user">
-				<img src="img/animal/small.jpg" alt="">
-				<p>
-					<label for="">萌宠家族</label> <span>3月27日</span>
-				</p>
-			</div>
+	<%--<div class="disscuss">--%>
+		<%--<h2>评论</h2>--%>
+		<%--<div class="container-user">--%>
+			<%--<div class="user">--%>
+				<%--<img src="img/animal/small.jpg" alt="">--%>
+				<%--<p>--%>
+					<%--<label for="">萌宠家族</label> <span>3月27日</span>--%>
+				<%--</p>--%>
+			<%--</div>--%>
 
-			<div class="remark">
-				<p>好可爱的泰迪，我很喜欢。我可以领养吗，我肯定会好好爱她的。</p>
-			</div>
+			<%--<div class="remark">--%>
+				<%--<p>好可爱的泰迪，我很喜欢。我可以领养吗，我肯定会好好爱她的。</p>--%>
+			<%--</div>--%>
 
-			<div class="remark-rf">
-				<a href=""><i class="iconfont">&#xe633;&nbsp;&nbsp;<span
-						class="remark">回复</span></i></a> <a href=""><i class="iconfont">&#xe62c;&nbsp;&nbsp;<span>2</span></i></a>
-			</div>
-		</div>
+			<%--<div class="remark-rf">--%>
+				<%--<a href=""><i class="iconfont">&#xe633;&nbsp;&nbsp;<span--%>
+						<%--class="remark">回复</span></i></a> <a href=""><i class="iconfont">&#xe62c;&nbsp;&nbsp;<span>2</span></i></a>--%>
+			<%--</div>--%>
+		<%--</div>--%>
 
-		<div class="container-user">
-			<div class="user">
-				<img src="img/animal/small.jpg" alt="">
-				<p>
-					<label for="">萌宠家族</label> <span>3月27日</span>
-				</p>
-			</div>
+		<%--<div class="container-user">--%>
+			<%--<div class="user">--%>
+				<%--<img src="img/animal/small.jpg" alt="">--%>
+				<%--<p>--%>
+					<%--<label for="">萌宠家族</label> <span>3月27日</span>--%>
+				<%--</p>--%>
+			<%--</div>--%>
 
-			<div class="remark">
-				<p>好可爱的泰迪，我很喜欢。我可以领养吗，我肯定会好好爱她的。</p>
-			</div>
+			<%--<div class="remark">--%>
+				<%--<p>好可爱的泰迪，我很喜欢。我可以领养吗，我肯定会好好爱她的。</p>--%>
+			<%--</div>--%>
 
-			<div class="remark-rf">
-				<a href=""><i class="iconfont">&#xe633;&nbsp;&nbsp;<span
-						class="remark">回复</span></i></a> <a href=""><i class="iconfont">&#xe62c;&nbsp;&nbsp;<span>2</span></i></a>
-			</div>
-		</div>
+			<%--<div class="remark-rf">--%>
+				<%--<a href=""><i class="iconfont">&#xe633;&nbsp;&nbsp;<span--%>
+						<%--class="remark">回复</span></i></a> <a href=""><i class="iconfont">&#xe62c;&nbsp;&nbsp;<span>2</span></i></a>--%>
+			<%--</div>--%>
+		<%--</div>--%>
 
-	</div>
+	<%--</div>--%>
 
-	<div class="my-remark" id="my-remark">
-		<a href="javascript:;"><i class="iconfont">&#xe84d;&nbsp;<span>我来说两句...</span></i></a>
-	</div>
+	<%--<div class="my-remark" id="my-remark">--%>
+		<%--<a href="javascript:;"><i class="iconfont">&#xe84d;&nbsp;<span>我来说两句...</span></i></a>--%>
+	<%--</div>--%>
 
-	<div class="display" id="display">
-		<div class="message">
-			<p>来说两句吧...</p>
-		</div>
-		<button value="取消">取消</button>
-		<button value="发表">发表</button>
-	</div>
+	<%--<div class="display" id="display">--%>
+		<%--<div class="message">--%>
+			<%--<p>来说两句吧...</p>--%>
+		<%--</div>--%>
+		<%--<button value="取消">取消</button>--%>
+		<%--<button value="发表">发表</button>--%>
+	<%--</div>--%>
 	<script>
 		$('#display').hide();
 		$('#my-remark a').click(function() {

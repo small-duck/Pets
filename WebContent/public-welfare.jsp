@@ -10,7 +10,7 @@
 <link type="text/css" href="css/public-welfare.css" rel="stylesheet">
 <link rel="stylesheet" href="css/finding.css">
 <link rel="stylesheet" href="iconfonts/iconfont.css">
-<script src="jquery-1.4.2.min.js"></script>
+<%--<script src="jquery-1.4.2.min.js"></script>--%>
 <style>
 .write {
 	position: absolute;
@@ -164,20 +164,27 @@
 						<option value="小猪">小猪</option>
 					</select>
 				</p>
-				<p class="special">
-					<span>丢失地址：</span> <select name="lookforAddr" id="">
-						<option value="安徽省">安徽省</option>
-						<option value="浙江省">浙江省</option>
-						<option value="广东省">广东省</option>
-					</select> <select name="lookforAddr" id="" class="small">
-						<option value="合肥市">合肥市</option>
-						<option value="阜阳市">阜阳市</option>
-						<option value="芜湖市">芜湖市</option>
-					</select> <select name="lookforAddr" id="" class="small">
-						<option value="肥东区">肥东区</option>
-						<option value="肥西区">肥西区</option>
-						<option value="巢湖">巢湖</option>
-					</select>
+				<p class="special" id="city">
+					<span>丢失地址：</span>
+					<select name="lookforAddr" class="prov"></select>
+					<select name="lookforAddr" class="city" disabled="disabled"></select>
+					<select name="lookforAddr" class="dist" disabled="disabled"></select>
+				<%--<select name="lookforAddr" id="">--%>
+						<%--<option value="安徽省">安徽省</option>--%>
+						<%--<option value="浙江省">浙江省</option>--%>
+						<%--<option value="广东省">广东省</option>--%>
+					<%--</select> --%>
+					<%--<select name="lookforAddr" id="" class="small">--%>
+						<%--<option value="合肥市">合肥市</option>--%>
+						<%--<option value="阜阳市">阜阳市</option>--%>
+						<%--<option value="芜湖市">芜湖市</option>--%>
+					<%--</select>--%>
+					<%--<select name="lookforAddr" id="" class="small">--%>
+						<%--<option value="肥东区">肥东区</option>--%>
+						<%--<option value="肥西区">肥西区</option>--%>
+						<%--<option value="巢湖">巢湖</option>--%>
+					<%--</select>--%>
+
 				</p>
 				<p class="special">
 					<span>宠物图片：</span> <input type="file" name="upload"style="position: absolute;top: 189px; left: 100px;">
@@ -265,6 +272,9 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery-1.4.2.min.js"></script>
 	<script src="js/pet_public.js"></script>
+	<script type="text/javascript" src="http://www.ijquery.cn/js/jquery.js"></script>
+	<script type="text/javascript" src="http://www.ijquery.cn/js/cityselect/city.min.js"></script>
+	<script type="text/javascript" src="http://www.ijquery.cn/js/cityselect/jquery.cityselect.js"></script>
 	<script>
 		$('#seek').hide();
 		$('#show').click(function() {
@@ -281,6 +291,16 @@
 				$(".push_write_say").hide();
 			})
 		})
+	</script>
+	<script type="text/javascript">
+        $(document).ready(function() {
+            $("#city").citySelect({
+                prov: "安徽",
+                city: "巢湖",
+                dist: "居巢区",
+                nodata: "none"
+            })
+        })
 	</script>
 	<script type="text/javascript">
     function mapShow(){

@@ -125,22 +125,22 @@
 	}
 	//管理员来放置图片标记
 	var point= new BMap.Point(117.292364,31.874718);
-	addMarkerTest(point,"http://localhost:8081/Pet/img/01.jpg" );
-	var point= new BMap.Point(117.292364,31.87471);
-	addMarkerTest(point,"http://localhost:8081/Pet/img/02.jpg");
-	var point= new BMap.Point(17.274541,31.92769);
-	addMarkerTest(point,"http://localhost:8081/Pet/img/04.jpg");
-	var point= new BMap.Point(117.135987,31.807478);
-	addMarkerTest(point,"http://localhost:8081/Pet/img/04a.jpg");
-	var point= new BMap.Point(17.135987,31.807478);
-	addMarkerTest(point,"http://localhost:8081/Pet/img/05.jpg");
-	var point= new BMap.Point( 117.45334,31.788328);
-	addMarkerTest(point,"http://localhost:8081/Pet/img/06.jpg");
+	addMarkerTest(point,"http://localhost:80/Pet/img/01.jpg" );
+//	var point= new BMap.Point(117.292364,31.87471);
+//	addMarkerTest(point,"http://localhost:80/Pet/img/02.jpg");
+//	var point= new BMap.Point(17.274541,31.92769);
+//	addMarkerTest(point,"http://localhost:80/Pet/img/04.jpg");
+//	var point= new BMap.Point(117.135987,31.807478);
+//	addMarkerTest(point,"http://localhost:80/Pet/img/04a.jpg");
+//	var point= new BMap.Point(17.135987,31.807478);
+//	addMarkerTest(point,"http://localhost:80/Pet/img/05.jpg");
+//	var point= new BMap.Point( 117.45334,31.788328);
+//	addMarkerTest(point,"http://localhost:80/Pet/img/06.jpg");
 	
 	
 		//设置内容
     var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
-                    '<img src="img/01.jpg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+                    '<img src="img/02.jpg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
                     '地址：安徽省巢湖学院<br/>简介：厉害了,我的哥' +
                   '</div>';
 				  
